@@ -71,3 +71,11 @@ Modify this ReadMe file to answer the following questions directly in place.
 	
 	4) Docker issues - lost internet within docker due to some ip binding to vm or local routing issues(
 	I guess this falls under lost internet, but I am talking more if docker is the cause rather then ISP)
+	
+	A) Check to make sure the Docker image was not created with special flags such as "--internal" that block access to the internet 
+	
+	B) According to this website (https://scene-si.org/2016/04/09/debugging-docker-network-connectivity/), network connectivity issues may be resolved by running the following command:
+		service docker restart
+	
+	
+	
